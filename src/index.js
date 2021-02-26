@@ -25,4 +25,4 @@ app.get('/',(req, res)=>{
 });
 
 app.listen(port, ()=>{console.log( `Example app listening at http://localhost:${port}`)});
-console.log("sudo kill $(sudo lsof -t -i:3000 to close the port, killall -9 node");
+console.log("to close the port, killall -9 node");
