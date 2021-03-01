@@ -3,3 +3,17 @@ h1 {
 
 h2 {
   color: #6a7d94; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.app .container {
+  min-height: 1000px;
+  position: relative;
+  padding: 100px; }
+
+header {
+  background: #ff0;
+  padding: 10px; }
