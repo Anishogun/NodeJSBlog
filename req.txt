@@ -1,1 +1,8 @@
 something
+
+   // if(request.query.q == "home"){
+        // fs.writeFile('request.txt', request.query.q  , ["utf-8"],()=>{
+        //     console.log("request has been saved!");
+        // });
+        // response.render('Pages/home');
+    // }
