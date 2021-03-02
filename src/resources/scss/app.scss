@@ -1,22 +1,23 @@
-@import "variables";
+@import 'variables';
 
-h1{
-    color: $red-color;
+h1 {
+  color: $red-color;
 }
-h2{
-    color: $blue-color;
+h2 {
+  color: $blue-color;
 }
-html, body {
-    margin:0;
-    padding:0;
-    height:100%;
- }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .app .container {
-    min-height: 1000px;
-    position:relative;
-    padding: 100px;
- }
- header {
-    background:#ff0;
-    padding:10px;
- }
+  min-height: 1000px;
+  position: relative;
+  padding: 100px;
+}
+header {
+  background: #ff0;
+  padding: 10px;
+}

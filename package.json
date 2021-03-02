@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon --inspect src/index.js ",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
+    "beautifulcode": "prettier --single-quote --trailing-comma all --write 'src/**/*.{js,json,scss}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,12 +26,15 @@
   },
   "homepage": "https://github.com/Anishogun/NodeJSBlog#readme",
   "dependencies": {
-    "express": "^4.17.1", 
+    "express": "^4.17.1",
     "express-handlebars": "^5.2.1"
   },
   "devDependencies": {
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
     "morgan": "^1.10.0",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }
