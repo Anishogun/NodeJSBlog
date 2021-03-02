@@ -7,7 +7,9 @@
     "start": "nodemon --inspect src/index.js ",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
     "beautifulcode": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lintstaged": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,9 @@
     "url": "https://github.com/Anishogun/NodeJSBlog/issues"
   },
   "homepage": "https://github.com/Anishogun/NodeJSBlog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1"
