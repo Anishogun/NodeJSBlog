@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --inspect src/index.js ",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
-    "beautifulcode": "prettier --single-quote --trailing-comma all --write 'src/**/*.{js,json,scss}'",
+    "beautifulcode": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
