@@ -40,7 +40,7 @@ const port = process.env.PORT || 3300;
 // Routes init
 route(app);
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-});
-console.log('to close the port, killall -9 node');
+            app.listen(port, () => {
+                      console.log(`Example app listening at http://localhost:${port}`);
+            });
+            console.log('to close the port, killall -9 node');
