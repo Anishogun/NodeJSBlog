@@ -21,19 +21,19 @@ var hbs = exphbs.create({extname: ".hbs"});
 // Set static folders for accessing 
 app.use(express.static(path.join(__dirname,'public')));
 
-// For getting  POST request values in request body
-app.use(express.urlencoded( {extended: true }));
-app.use(express.json());
+    // For getting  POST request values in request body
+    app.use(express.urlencoded( {extended: true }));
+    app.use(express.json());
 
-app.engine('hbs', hbs.engine);
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources/views'))
+    app.engine('hbs', hbs.engine);
+    app.set('view engine', 'hbs');
+    app.set('views', path.join(__dirname, 'resources/views'))
 
-// Use morgan for logging.
-app.use(morgan('combined'));
+    // Use morgan for logging.
+    app.use(morgan('combined'));
 
-// Setting port for server
-const port = process.env.PORT || 3300;
+    // Setting port for server
+    const port = process.env.PORT || 3300;
 
 
 ///////////////////////////////////////////////////////////////////////
