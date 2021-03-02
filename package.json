@@ -30,6 +30,9 @@
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
+  "husky": {
+
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1"
