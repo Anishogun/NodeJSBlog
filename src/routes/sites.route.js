@@ -1,12 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-const newsController = require('../app/controllers/SitesController');
+const sitesController = require('../app/controllers/SitesController');
 
-router.use('/search', newsController.search);
+router.get('/search', sitesController.search);
 // always invoked
-// router.use(newsController.index); //or
-router.use('/', newsController.index);
+// router.use(sitesController.index); //or
+router.get('/', sitesController.index);
+router.get('/home', sitesController.index);
 
 module.exports = router;
 

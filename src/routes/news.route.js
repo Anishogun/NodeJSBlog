@@ -3,10 +3,10 @@ var router = express.Router();
 
 const newsController = require('../app/controllers/NewsController');
 
-router.use('/:plug', newsController.show);
+router.get('/:plug', newsController.show);
 // always invoked
 // router.use(newsController.index); //or
-router.use('/', newsController.index);
+router.get('/', newsController.index);
 
 module.exports = router;
 
